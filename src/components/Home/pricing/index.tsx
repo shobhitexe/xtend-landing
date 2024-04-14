@@ -25,7 +25,8 @@ export default function Pricing() {
         <BlueText
           title={
             <>
-              Here's an Idea of Our Pricing <br /> But Honestly, Let's Talk!
+              {`Here's an Idea of Our Pricing`} <br />{" "}
+              {`But Honestly, Let's Talk!`}
             </>
           }
           className="font-circularBold md:text-5xl sm:text-4xl xs:text-3xl text-2xl px-5"
@@ -41,8 +42,8 @@ export default function Pricing() {
             Landing Page
           </div>
           <div className="text-gray font-circularMedium md:text-xl sm:text-lg xs:text-base text-sm">
-            Ideal for those who've already got their website up and running and
-            are seeking assistance to enhance and update it further.
+            {`Ideal for those who've already got their website up and running and
+            are seeking assistance to enhance and update it further.`}
           </div>
           <div className="text-darkBlue font-circularBold md:text-5xl sm:text-4xl xs:text-3xl text-2xl mt-5">
             $999
@@ -81,7 +82,7 @@ export default function Pricing() {
             Let us understand what you need so we can help you!
           </div>
           <div className="text-darkBlue font-circularBold md:text-5xl sm:text-4xl xs:text-3xl text-2xl sm:mt-20 xs:mt-10 mt-5">
-            Let's Talk!
+            {`Let's Talk!`}
           </div>
           <hr />
           <div className="flex flex-col gap-1">

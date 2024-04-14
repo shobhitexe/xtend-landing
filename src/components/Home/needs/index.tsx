@@ -32,10 +32,10 @@ export default function DesignNeeds() {
           className="md:text-5xl sm:text-4xl text-3xl font-circularBold px-5"
         />
         <div className="font-circularMedium sm:w-[60%] w-[80%] mx-auto md:text-2xl sm:text-xl text-base">
-          Running a successful business means more than just a website. Just
+          {`Running a successful business means more than just a website. Just
           like that running a successful agency means more than just website
           design, that's why we cover all your brand design needs, so you don't
-          have to go anywhere else.
+          have to go anywhere else.`}
         </div>
       </div>
 

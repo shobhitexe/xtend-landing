@@ -37,10 +37,10 @@ export default function HowItWorks() {
             className="md:text-5xl text-4xl font-circularBold"
           />
           <div className="md:text-2xl text-xl font-circularMedium">
-            You don't have to worry about the hassle of hiring designers,
+            {`You don't have to worry about the hassle of hiring designers,
             getting your to-do list sorted, having day long meetings and
             hundreds of paid revisions, we've got your backs, and your website
-            too!
+            too!`}
           </div>
         </div>
         <BlueButton

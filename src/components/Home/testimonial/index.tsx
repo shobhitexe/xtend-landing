@@ -21,8 +21,8 @@ export default function Testimonial() {
           />
         </div>
         <div className="items-center md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-circularBold w-[80%] mx-auto leading-snug text-[#1B2632]">
-          “You guys are the best. You've already done 10x times better than the
-          last team. That's great work.”
+          {`“You guys are the best. You've already done 10x times better than the
+          last team. That's great work.”`}
         </div>
       </div>
 
