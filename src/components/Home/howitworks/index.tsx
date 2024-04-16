@@ -1,6 +1,7 @@
 import BlueButton from "@/components/Buttons/BlueButton";
 import BlueText from "@/components/Texts/BlueText";
 import Image from "next/image";
+import Link from "next/link";
 
 const pointsArr = [
   "No Long Hiring Process",
@@ -43,9 +44,15 @@ export default function HowItWorks() {
             too!`}
           </div>
         </div>
+
         <BlueButton
           title={
-            <div className="flex items-center gap-1">
+            <Link
+              href={"https://calendly.com/adityagypxtend/30min"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1"
+            >
               <div>Book a Call</div>
               <Image
                 src={"/image/howitworks/arrow.svg"}
@@ -53,7 +60,7 @@ export default function HowItWorks() {
                 width={20}
                 height={20}
               />
-            </div>
+            </Link>
           }
           className="px-10 py-3"
           rounded="rounded-full"

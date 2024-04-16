@@ -1,4 +1,5 @@
 import BlueButton from "@/components/Buttons/BlueButton";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -22,11 +23,17 @@ export default function Hero() {
         </p>
       </div>
       <div className="sm:mt-10 mt-5"></div>
-      <BlueButton
-        title="Audit My Website"
-        className="sm:px-10 px-5 sm:py-4 py-2 md:text-xl sm:text-lg text-base"
-        rounded="rounded-xl"
-      />
+      <Link
+        href={"https://calendly.com/adityagypxtend/30min"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BlueButton
+          title="Audit My Website"
+          className="sm:px-10 px-5 sm:py-4 py-2 md:text-xl sm:text-lg text-base"
+          rounded="rounded-xl"
+        />
+      </Link>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import BlueText from "@/components/Texts/BlueText";
 import Image from "next/image";
+import Link from "next/link";
 
 const landingpagePointers = [
   "3-5 day turnaround",
@@ -69,9 +70,14 @@ export default function Pricing() {
           </div>
           <hr className="sm:mt-14 mt-5" />
 
-          <div className="text-center border border-black text-[#134B67] font-circularBold rounded-lg py-3 cursor-pointer md:text-xl sm:text-lg xs:text-base text-sm">
+          <Link
+            href={"https://calendly.com/adityagypxtend/30min"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center border border-black text-[#134B67] font-circularBold rounded-lg py-3 cursor-pointer md:text-xl sm:text-lg xs:text-base text-sm"
+          >
             Book a Call
-          </div>
+          </Link>
         </div>
 
         <div className="bg-fullWebsiteCardBg p-5 md:w-[450px] w-full max-md:basis-1/2 rounded-2xl flex flex-col justify-between items-stretch gap-5">
@@ -102,9 +108,14 @@ export default function Pricing() {
           </div>
           <hr className="md:mt-10 mt-5" />
 
-          <div className="text-center bg-[#1CA4D8] text-white font-circularBold rounded-lg py-3 cursor-pointer md:text-xl sm:text-lg xs:text-base text-sm">
+          <Link
+            href={"https://calendly.com/adityagypxtend/30min"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center bg-[#1CA4D8] text-white font-circularBold rounded-lg py-3 cursor-pointer md:text-xl sm:text-lg xs:text-base text-sm"
+          >
             Audit My Website
-          </div>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import BlueButton from "@/components/Buttons/BlueButton";
+import Link from "next/link";
 
 export default function Launch() {
   return (
@@ -11,11 +12,17 @@ export default function Launch() {
         your business up to 7.32x in just 28 days!
       </div>
 
-      <BlueButton
-        title={"Audit My Website - It's Free"}
-        className="sm:px-5 px-3 sm:py-3 py-2 md:text-base sm:text-sm text-xs"
-        rounded="rounded-xl"
-      />
+      <Link
+        href={"https://calendly.com/adityagypxtend/30min"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BlueButton
+          title={"Audit My Website - It's Free"}
+          className="sm:px-5 px-3 sm:py-3 py-2 md:text-base sm:text-sm text-xs"
+          rounded="rounded-xl"
+        />
+      </Link>
     </section>
   );
 }

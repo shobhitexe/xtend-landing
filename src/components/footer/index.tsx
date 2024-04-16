@@ -2,8 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
-  { name: "instagram", img: "/image/footer/instagram.png", link: "" },
-  { name: "twitter", img: "/image/footer/twitter.png", link: "" },
+  {
+    name: "instagram",
+    img: "/image/footer/instagram.png",
+    link: "https://www.instagram.com/xtend_agency/",
+  },
+  {
+    name: "twitter",
+    img: "/image/footer/twitter.png",
+    link: "https://twitter.com/XtendAgency",
+  },
   {
     name: "linkedin",
     img: "/image/footer/linkedin.png",

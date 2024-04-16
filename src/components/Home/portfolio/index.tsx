@@ -1,42 +1,43 @@
 import BlueButton from "@/components/Buttons/BlueButton";
 import BlueText from "@/components/Texts/BlueText";
 import Image from "next/image";
+import Link from "next/link";
 
 const portfolioArray = [
   {
-    category: "Crypto Exchange",
+    category: "Forex Platform",
     title: "FundYourTrading",
+    sub: "Navigate the world of web technology",
+    image: "/image/portfolio/fyt-main.avif",
+    logo: "/image/portfolio/fyt-logo.png",
+  },
+  {
+    category: "Forex broker",
+    title: "Mazi Finance",
+    sub: "Navigate the world of web technology",
+    image: "/image/portfolio/mazifinance-main.avif",
+    logo: "/image/portfolio/mazifinance-logo.png",
+  },
+  {
+    category: "Crypto DEX",
+    title: "Onooks",
     sub: "Navigate the world of web technology",
     image: "/image/portfolio/pf1.png",
     logo: "/image/portfolio/pf2.png",
   },
   {
-    category: "Crypto Wallet",
+    category: "landing Page",
+    title: "Zebpay",
+    sub: "Navigate the world of web technology",
+    image: "/image/portfolio/pf1.png",
+    logo: "/image/portfolio/pf2.png",
+  },
+  {
+    category: "Full Stack Trading Platform",
     title: "Stasis",
     sub: "Navigate the world of web technology",
-    image: "/image/portfolio/pf1.png",
-    logo: "/image/portfolio/pf2.png",
-  },
-  {
-    category: "Crypto Exchange",
-    title: "FundYourTrading",
-    sub: "Navigate the world of web technology",
-    image: "/image/portfolio/pf1.png",
-    logo: "/image/portfolio/pf2.png",
-  },
-  {
-    category: "Crypto Exchange",
-    title: "FundYourTrading",
-    sub: "Navigate the world of web technology",
-    image: "/image/portfolio/pf1.png",
-    logo: "/image/portfolio/pf2.png",
-  },
-  {
-    category: "Crypto Wallet",
-    title: "Stasis",
-    sub: "Navigate the world of web technology",
-    image: "/image/portfolio/pf1.png",
-    logo: "/image/portfolio/pf2.png",
+    image: "/image/portfolio/tradebox-main.avif",
+    logo: "/image/portfolio/tradebox-logo.png",
   },
   {
     category: "Crypto Exchange",
@@ -71,7 +72,7 @@ export default function Portfolio() {
               alt={portfolio.title}
               width={400}
               height={400}
-              className=""
+              className="rounded-2xl"
             />
             <div className="text-darkBlue bg-[#71D7FC] w-fit px-2 rounded-lg font-circularMedium md:text-base text-sm">
               {portfolio.category}
@@ -96,11 +97,19 @@ export default function Portfolio() {
       </div>
 
       <div className="sm:mt-20 mt-10"></div>
-      <BlueButton
-        title={"View Portfolio"}
-        className="px-10 py-3 sm:text-xl xs:text-lg text-base"
-        rounded="rounded-full"
-      />
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={
+          "https://www.figma.com/proto/FLa0M3N0KW9IDjJCDzXQvk/Latest-Projects?page-id=0%3A1&type=design&node-id=1-14&viewport=292%2C342%2C0.07&t=nOe4sx9kxxeihUU3-1&scaling=min-zoom&starting-point-node-id=1%3A14&mode=design"
+        }
+      >
+        <BlueButton
+          title={"View Portfolio"}
+          className="px-10 py-3 sm:text-xl xs:text-lg text-base"
+          rounded="rounded-full"
+        />
+      </Link>
     </section>
   );
 }
