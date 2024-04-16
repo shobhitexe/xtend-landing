@@ -17,7 +17,7 @@ export default function Navbar() {
   const navBarLinks = [
     { title: "Home", href: "", to: "home" },
     { title: "Projects", href: "", to: "projects" },
-    { title: "About Us", href: "", to: "" },
+    { title: "About Us", href: "", to: "launch" },
     { title: "", href: "", to: "" },
     { title: "Services", href: "", to: "services" },
     { title: "Pricing", href: "", to: "pricing" },
@@ -49,6 +49,7 @@ export default function Navbar() {
                   spy={true}
                   smooth={true}
                   key={nav.title}
+                  offset={-150}
                   onClick={() => setSelected(idx)}
                   className={`md:text-lg text-base cursor-pointer md:py-5 py-4 md:px-10 px-3 font-circularBold sm:flex hidden ${
                     idx === selected && "bg-white text-black rounded-full"
